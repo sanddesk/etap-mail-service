@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap' rel='stylesheet'>
+    <title>Base Layout</title>
+    <style>
+        html,
+        body {
+            min-height: 100%;
+            padding: 0;
+            margin: 0;
+            color: #121212;
+            font-family: 'Mulish', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+            margin-top: 0px;
+        }
+
+        h3 {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: 0.01em;
+            color: #000000;
+            margin: 28px 0;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 22px;
+            color: #000000;
+            margin: 0;
+        }
+
+        span {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: -0.01em;
+            color: #3B525E;
+        }
+
+        .page-padding {
+            padding: 0px 36px;
+        }
+
+        .py {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+
+        .px {
+            padding-left: 36px;
+            padding-right: 36px;
+        }
+
+        .Container {
+            min-width: 400px;
+            max-width: 600px;
+            width: 100%;
+            background-color: #ffffff;
+            margin: 0 auto;
+            height: 100%;
+            overflow-x: hidden;
+            padding-bottom: 35px;
+            border: 1px solid #eee;
+        }
+
+        .Header_Section {
+            width: 100%;
+        }
+
+        .Header_Container {
+            padding: 0px 36px;
+            background: #EDF0F5;
+            height: 80px;
+        }
+
+        .logo {
+            float: left;
+            height: 36px;
+            padding-top: 23px;
+        }
+
+        .Header_Text {
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.01em;
+            color: #000000;
+            font-weight: normal;
+        }
+
+        .Body_Content {
+            color: #000000;
+            padding: 40px 36px;
+        }
+
+        .Footer_Content {
+            font-size: 14px;
+            line-height: 19.53px;
+        }
+
+        .SVG_Wrapper {
+            width: 100%;
+            min-width: 414px;
+            height: 176px;
+            background-color: #123D64;
+        }
+
+        .Icon_Container {
+            margin-right: 12px;
+        }
+
+        .ReservedLabel {
+            margin-top: 35px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.49;
+            color: #27262D;
+        }
+
+        .Store_Container {
+            margin-top: 15px;
+        }
+
+        table {
+            width: 100%;
+            border: 0px;
+            border-collapse: collapse;
+        }
+
+        .TH {
+            width: 100%;
+            white-space: nowrap;
+            border: 0px;
+            padding: 0px 0px;
+        }
+
+        .socials {
+            border: 0px;
+            width: 0px;
+            padding-top: 51px;
+            padding-bottom: 24px;
+        }
+
+        tr,
+        .SM_TH {
+            border: 0px;
+            padding: 0px 0px;
+            margin: 0px 0px;
+            width: 0px;
+        }
+
+        .Storetable {
+            border: 0px;
+            width: 0px;
+        }
+
+        .Footer_Action {
+            width: 80%;
+            margin: 32px auto 0;
+        }
+
+        .Footer_Action td {
+            text-align: center;
+            color: #2A3DE5;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .Wrapper {
+            min-height: 100%;
+            width: 100%;
+        }
+
+        .Questions {
+            padding: 40px 24px;
+            text-align: left;
+            margin-right: -24px;
+            margin-left: -24px
+        }
+
+        .bg-gray {
+            background-color: #F1F3F4;
+        }
+
+        .bg-blue {
+            background-color: #EEF9FB;
+            ;
+        }
+
+        .hero {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .bolder {
+            font-weight: 700;
+        }
+
+        button {
+            text-align: center;
+            padding: 12px 0;
+            width: 257px;
+            height: 42px;
+            color: #000;
+            border-radius: 50px;
+        }
+
+        button.blue {
+            background: #02D7F2;
+            border: 1px solid #02D7F2;
+        }
+
+        button.outline {
+            border: 1px solid #02D7F2;
+            background: #fff;
+            color: #02D7F2;
+        }
+
+        .cta {
+            margin: 40px 0
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        img {
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div
+        style="display: none !important; visibility: hidden; opacity: 0; overflow: hidden; mso-hide: all; height: 0; width: 0; max-height: 0; max-width: 0; font-size: 1px; line-height: 1px; color: #151515;">
+        {{subtext}}</div>
+    <div
+        style="display: none !important; visibility: hidden; opacity: 0; overflow: hidden; mso-hide: all; height: 0; width: 0; max-height: 0; max-width: 0; font-size: 1px; line-height: 1px;">
+        ‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;
+    </div>
+    <div class='Wrapper'>
+        <div class='Container'>
+            <div class='Header_Section'>
+                <div class='Header_Container'>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class='TH'> <img class='logo' src={{src}} />
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <div>
+
+                <div class='Body_Content'>
+                    {{> content}}
+                </div>
+                {{#if showAltFooter}}
+                <div class="px py bg-blue">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <p style="padding-right: 73px;">If you already have a cover, no worries. Enter the
+                                    details into the app, and we will remind you before your policy
+                                    expires.</p>
+                            </td>
+                            <td>
+                                <img style="height: 72px; width: 72px;"
+                                    src="https://firebasestorage.googleapis.com/v0/b/e-tap-4e283.appspot.com/o/Frame%202454.png?alt=media&token=a1cc440a-4e3b-4506-b852-8e24c5544d94" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                {{/if}}
+
+                {{#unless showAltFooter2}}
+                <div class="px py bg-gray">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <p style="margin-bottom: 10px" class="bolder">Any Questions</p>
+                                <span>If you have any questions or need any support, chat us in app, email us at <a
+                                        href="help@etapinsure.comtext">help@etapinsure.com</a> or reply to this message.
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                {{/unless}}
+
+                <div class='socials px'>
+                    <table style='width: 0px'>
+                        <tr>
+                            <td class='SM_TH'>
+                                <a href="https://twitter.com/etapcarinsure">
+                                    <img class='Icon_Container'
+                                        src='https://firebasestorage.googleapis.com/v0/b/e-tap-4e283.appspot.com/o/Frame%20398.png?alt=media&token=46c17706-8d2c-4bb8-aa40-0b1533d265b7' />
+                                </a>
+                            </td>
+                            <td class='SM_TH'>
+                                <a href="https://www.linkedin.com/company/etapinsure/mycompany">
+                                    <img class='Icon_Container'
+                                        src='https://firebasestorage.googleapis.com/v0/b/e-tap-4e283.appspot.com/o/Frame%20396.png?alt=media&token=c38e1154-0323-4af0-bff7-1d96414cacc3' />
+                                </a>
+                            </td>
+                            <td class='SM_TH'>
+                                <a href="https://www.instagram.com/etapcarinsurance/">
+                                    <img class='Icon_Container'
+                                        src='https://firebasestorage.googleapis.com/v0/b/e-tap-4e283.appspot.com/o/Frame%20397.png?alt=media&token=221ab809-2595-4f6a-90aa-03fe018a8535' />
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                {{!-- <div class='Store_Container'>
+                    <table class='Storetable'>
+                        <tr>
+                            <td> <a href='https://play.google.com/store/apps/details?id=com.etapapp'> <img
+                                        src='https://firebasestorage.googleapis.com/v0/b/etap-d0f52.appspot.com/o/Assets%2FGoogle%20Store.png?alt=media&token=dda380f2-7667-4851-80f7-f8b583206a21'
+                                        alt='GoogleStoreIMG' /></a> </td>
+                            <td> <a href='https://apps.apple.com/ng/app/etap/id1565950437'> <img
+                                        src='https://firebasestorage.googleapis.com/v0/b/etap-d0f52.appspot.com/o/Assets%2Fimage%202.png?alt=media&token=613bcbd2-8049-4e5a-994e-c2798ce76bf0'
+                                        alt='AppleStoreIMG' /> </a> </td>
+                        </tr>
+                    </table>
+                </div>
+                <footer class="px">
+                    <div class='Footer_Content'> Policies are sold by ETAP on behalf of Tangerine General Insurance
+                        Limited, licensed by the National Insurance Commission </div>
+                    <table class='Footer_Action'>
+                        <tr>
+                            <td> <a href='mailto:admin@etapinsure.com'> Contact Us </a></td>
+                            <td> <a href='https://www.etapinsure.com/privacy-policy'> Privacy policy </a></td>
+                        </tr>
+                    </table>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
